@@ -2,6 +2,7 @@ import asyncio
 import os
 import random
 
+from dotenv import load_dotenv
 import discord
 import requests
 import json
@@ -9,6 +10,8 @@ from pygelbooru import Gelbooru
 import asyncio
 from apicalls import *
 
+# Load environment variables from .env file
+load_dotenv()
 # Get token from .env file
 token = os.environ['TOKEN']
 
