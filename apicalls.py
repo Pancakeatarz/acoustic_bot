@@ -7,7 +7,6 @@ import torch
 import torchvision.models as models
 from PIL import Image
 from pygelbooru import Gelbooru
-from replit import db
 from torchvision import transforms
 from transformers import GPT2LMHeadModel, GPT2Tokenizer
 
