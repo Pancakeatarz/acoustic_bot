@@ -10,3 +10,4 @@ pygame==2.5.2
 pyperclip==1.8.2
 python-dotenv==1.0.1
 yarl==1.9.4
+pygelbooru==2.0.1
