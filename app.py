@@ -71,9 +71,6 @@ async def on_message(message):
   if "makima" in message.content.lower():
     await message.channel.send(random.choice(mkmMessageList))
 
-# Periodically clean up old URLs stored in db (e.g., once a day) 
-clean_up_old_urls(threshold=24 * 60 * 60)  # 24 hours
-
 # Run the client
 client.run(token)
 ##no code after this because it wouldn't work
