@@ -13,24 +13,6 @@ from transformers import GPT2LMHeadModel, GPT2Tokenizer
 # Load the GPT-2 tokenizer
 tokenizer = GPT2Tokenizer.from_pretrained('gpt2')
 
-
-##db
-##
-# Function to add URL to the database
-def add_url(url):
-  db[url] = time.time()  # Get current timestamp
-    # Store URL and timestamp in the database
-
-  # Function to clean up old URLs
-def clean_up_old_urls(threshold):
-  current_time = time.time()
-  for url, timestamp in db.items():
-    if current_time - timestamp > threshold:
-      del db[url]  # Remove URL if older than threshold
-    # Query the database for URLs and their timestamps
-    # Iterate over URLs and remove those older than the threshold
-
-
 ##nekko
 ###
 # Define neko commands dictionary
